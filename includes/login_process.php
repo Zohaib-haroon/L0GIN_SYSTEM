@@ -14,7 +14,7 @@ if (isset($_POST['login'])) {
 
 
 if (!$result) {
-    die("Query Failed".mysqli_error());
+    die("Query Failed" . mysqli_error());
 }else {
     $row = mysqli_num_rows($result);
     if ($row == 1) {
